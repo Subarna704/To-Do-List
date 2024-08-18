@@ -1,0 +1,10 @@
+.box {
+    border: 4px solid black;
+    height: 70vh;
+    width: 50vw;
+    text-align: center;
+    position: absolute;
+    top: 5rem;
+    left: 15rem;
+    padding: 4rem ;
+    }
