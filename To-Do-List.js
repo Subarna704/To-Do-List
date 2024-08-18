@@ -17,13 +17,12 @@ const showlist = () => {
         const {duedate} = newArrayobject;
         
         code += `
-        <p>
-        ${name} ${duedate}
-          <button onclick="
+        <div class="list-css">${name}</div>
+        <div class="list-css">${duedate}</div>
+        <button class="delete-css"onclick="
             myArray.splice(${i}, 1);
             showlist();
-          ">Delete</button>
-        </p>
+        ">Delete</button>
         `;
     }
     msg.innerHTML = code;

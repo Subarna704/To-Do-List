@@ -8,15 +8,20 @@
 </head>
 <body>
     <div class="box">
-    <input class="list" onkeydown="
-            if(event.key === 'Enter'){
-                addlist();
-            };
-    ">
-    <input type="date" class="date">
-    <button class="btn" >submit</button>
-    <div class="work-list"></div>
-</div>
+        <h1>To-Do-list</h1>
+        <div class="input-grid">
+            <input class="list input-list" onkeydown="
+                if(event.key === 'Enter'){
+                    addlist();
+                };
+            "
+            placeholder="To Do Name"
+            >
+            <input type="date" class="date input-list">
+            <button class="btn btn-css" >submit</button>
+        </div>
+        <div class="work-list list-grid"></div>
+    </div>
  
     <script src="To-Do-List.js"></script>
 </body>
