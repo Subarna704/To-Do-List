@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        .img  {
+            height: 2rem;
+            width: 2rem;
+        }
+        .in-img  {
+            height: 2rem;
+            width: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h2>Amazon shipping calculator</h2> -->
+    <!-- <p>Orders under $40 = +$10 shipping charge</p>
+    <p>Orders over $40 = free shipping </p>
+
+    <input type="number" class="price">
+    <button class="btn">calculate</button>
+    <p class="msg"></p>
+    <script src="script.js">
+        // function keyup(event) {
+        //     const msg = document.querySelector('.msg');
+        //     msg.innerHTML = event.key
+        
+
+        // } -->
+    <!-- </script> -->
+
+    
+<!-- <button class="option" id="paper"><img src="images/paper_img.JPG" class = "img"></button>
+<button class="option" id="rock" ><img src="images/rock_img.JPG" class="img"></button>
+<button class="option" id="scissor"><img src="images/scissor_img.JPG" class="img"></button>
+
+
+<p class ="para"> -->
+
+    <input class="list" onkeydown="
+    
+        console.log(event);
+            if(event.key === 'Enter'){
+                add();
+            };
+        
+   
+    ">
+    <button class="btn" >submit</button>
+    <div></div>
+   
+
+</p>
+
+<script>
+// const btn = document.querySelector(".btn");
+// const myArray = [];
+// const msg = document.querySelector("div");
+// const work = document.querySelector(".list");
+
+
+
+
+
+
+// const Html = () => {
+//     let code = "";
+//     for(i=0; i<myArray.length; i++) {
+//         const newArray = myArray[i];
+//         code += `<p>${newArray}</p>`;
+//     }
+//     msg.innerHTML = code;
+  
+// }
+
+
+// const add = ()=> {
+//     const lists = work.value;
+//     myArray.push(lists);
+//     Html();
+//     work.value = "";
+// }
+
+
+// btn.addEventListener("click", add)
+
+
+
+
+
+// const myArray = [12,232,21];
+
+// function minmax(nums) {
+
+
+//     if (nums.length === 0){
+//         console.log("no numbers to compare")
+//     }
+//     else {
+//     let max = nums[0];
+//     let min = nums[0];
+
+//     for (i=1; i<nums.length; i++) {
+        
+//         if (max < nums[i]) {
+//             max = nums[i];
+//         }
+//         if(min>nums[i]){
+//             min = nums[i];
+
+//         }
+//     }
+
+    
+//     console.log(max, min);
+// }
+// }
+
+
+// minmax(myArray)
+
+// const word = ["apple", "orange", "apple", "apple", "banana"]
+
+// function countwords(words) {
+//     let count = {
+//         apple:0 ,
+//         orange:0,
+//         other:0
+//     }
+//     let appleCount=0;
+//     let orangeCount = 0;
+//     let otherCount = 0;
+//     for (i=0; i<words.length; i++){
+    
+
+       
+//         if (words[i]==="apple"){
+//             appleCount++
+//         }
+//         else if(words[i] === "orange") {
+//             orangeCount++;
+
+//         }
+//         else {
+
+//             otherCount++;
+
+//         }
+//     }
+//     count.apple = appleCount;
+//     count.orange= orangeCount;
+//     count.other = otherCount;
+
+//     return count;
+// }
+
+// const msg = countwords(word);
+
+// console.log(msg)
+
+
+
+
+const fruits = ["apple", "orange", "apple", "apple", "banana", "banana", "grape", "orange", "grape", "apple", "kiwi"];
+
+function countFruits(fruits) {
+    let count = {};
+
+    for (let i = 0; i < fruits.length; i++) {
+        let fruit = fruits[i];
+        if (count[fruit]) {
+            count[fruit]++;
+        } else {
+            count[fruit] = 1;
+        }
+    }
+
+    return count;
+}
+
+const fruitCount = countFruits(fruits);
+
+console.log(fruitCount);
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // let options = document.querySelectorAll(".option");
+    // const para = document.querySelector(".para")
+
+    // const comgen = () =>{
+    //     options = ["scissor", "paper", "rock"];
+    //     let rndm = Math.floor(Math.random() * 3)
+    //     return options[rndm];
+    // }
+
+    // // const showgame = (userchoice, comchoice) => {
+    // //     para.innerHTML = ` you
+    // // <img class ="in-img" src="images/${userchoice}_img.JPG">
+    // // <img class ="in-img" src="images/${comchoice}_img.JPG">
+    // // computer`
+
+    // // }
+
+    // const playgame = (comchoice, userchoice) => {
+    //     if(userchoice === comchoice) {
+    //         para.innerHTML = `you
+    //             <img class ="in-img" src="images/${userchoice}_img.JPG">
+    //             <img class ="in-img" src="images/${comchoice}_img.JPG">
+    //             computer. <h1> Game Draw </h1>`
+    //     }
+    //     else{
+    //         let win = true;
+    //         if(userchoice === "paper" ) {
+    //             win = comchoice==="rock"?true:false
+    //         }
+    //         else if(userchoice === "rock" ){
+    //             win = comchoice==="paper"?false:true;
+    //         }
+    //         else{
+    //             win = comchoice==="paper"?true:false;
+    //         }
+
+    //         if(win) {
+    //             para.innerHTML = 'you win'
+    //         }
+    //         else {
+    //             para.innerHTML = 'you lose'
+    //         }
+    //     }
+
+    // }
+    
+
+    // options.forEach((option) => {
+    //     option.addEventListener("click", () => {
+    //          userchoice = option.getAttribute("id");
+    //         comchoice = comgen();
+
+    //     //    showgame(userchoice, comchoice);
+    //        playgame(comchoice, userchoice);
+    //        console.log(userchoice, comchoice)
+    //     })
+    // })
+    
+
+</script>
+</body>
+</html>
