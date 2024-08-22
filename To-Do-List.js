@@ -39,6 +39,7 @@ const addlist = ()=> {
     });
     showlist();
     work.value = "";
+    date.value = "";
 }
 
 
