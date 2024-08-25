@@ -40,7 +40,7 @@
 
 
 <p class ="para"> -->
-
+<!-- 
     <input class="list" onkeydown="
     
         console.log(event);
@@ -49,8 +49,9 @@
             };
         
    
-    ">
+    "> -->
     <button class="btn" >submit</button>
+    <p></p>
     <div></div>
    
 
@@ -165,26 +166,28 @@
 
 
 
-const fruits = ["apple", "orange", "apple", "apple", "banana", "banana", "grape", "orange", "grape", "apple", "kiwi"];
 
-function countFruits(fruits) {
-    let count = {};
 
-    for (let i = 0; i < fruits.length; i++) {
-        let fruit = fruits[i];
-        if (count[fruit]) {
-            count[fruit]++;
-        } else {
-            count[fruit] = 1;
-        }
-    }
+// const fruits = ["apple", "orange", "apple", "apple", "banana", "banana", "grape", "orange", "grape", "apple", "kiwi"];
 
-    return count;
-}
+// function countFruits(fruits) {
+//     let count = {};
 
-const fruitCount = countFruits(fruits);
+//     for (let i = 0; i < fruits.length; i++) {
+//         let fruit = fruits[i];
+//         if (count[fruit]) {
+//             count[fruit]++;
+//         } else {
+//             count[fruit] = 1;
+//         }
+//     }
 
-console.log(fruitCount);
+//     return count;
+// }
+
+// const fruitCount = countFruits(fruits);
+
+// console.log(fruitCount);
 
 
 
@@ -254,8 +257,69 @@ console.log(fruitCount);
     //        playgame(comchoice, userchoice);
     //        console.log(userchoice, comchoice)
     //     })
-    // })
+    // // })
     
+    // const btn = document.querySelector(".btn");
+    // const p = document.querySelector("p");
+    // let timeout;
+
+    
+    // btn.addEventListener("click", (event)=> {
+    //     event.preventDefault();
+    //     clearTimeout(timeout);
+    //     p.innerHTML = 'added'
+
+    // timeout = setTimeout( ()=> {
+       
+          
+    //         p.innerHTML = '';
+        
+    // }, 2000)});
+
+    const arry = [1, 4 ,4,5,3, 5,3 , -5];
+    let count= 0;
+
+
+   console.log( (arry.filter((value)=> value>=0 )).length);
+
+    // arry.forEach((value, index) => {
+    //     if(value>=0) {
+    //         count++;
+    //     }
+    // })
+
+    // console.log(count);
+
+
+    function addNum(array, num) {
+      return array.map((value)=> value+num);
+    }
+
+
+    console.log(addNum([2,3,4], 10));
+   
+
+    const removeEggs = (array) => {
+        let count=0;
+        return array.filter((value)=> {
+            
+            if(count<2){
+                if(value != "egg"){
+                    return true;
+                }
+                else{
+                    count++;
+                    return false;
+                }
+            }
+            else {
+                return true;
+        }
+        console.log(count)
+       })
+    }
+
+  console.log(removeEggs(['apple', 'egg', 'banana', 'egg', 'egg', 'egg']));
 
 </script>
 </body>
